@@ -1,0 +1,12 @@
+<div id="main">
+    <label>path</label>
+    <span id="path">{{model.depPath}}</span>
+    <div>
+        <descriptor [model]="model?.depData"></descriptor>
+    </div>
+    <div id="controls">
+        <button type="button" (click)="model?.update()">Update</button>
+        <button type="button" (click)="model?.remove()">Remove</button>
+    </div>
+</div>
+

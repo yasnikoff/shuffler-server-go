@@ -1,0 +1,75 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "../tags_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TagComponent"
+      }
+    ],
+    "6": "tag_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../tags_service.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "TagComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "tag",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "TagComponent",
+        "moduleUrl": "asset:shuffler_web_ui/lib/tags/tag/tag_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "model": "model"
+      },
+      "inputTypes": {
+        "model": " Tag"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<span>{{model.name}}<button (click)=\"remove()\">x</button></span>\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/tags/tag/tag_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/tags/tag/tag_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

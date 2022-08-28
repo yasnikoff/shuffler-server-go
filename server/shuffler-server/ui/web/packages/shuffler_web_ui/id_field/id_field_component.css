@@ -1,0 +1,16 @@
+#main {
+    width: 20em;
+    text-align:center;
+    text-wrap: normal;
+    font-size: xx-small;
+    color:grey;
+}
+:host-context(.border) #main{
+    border-width: 1px;
+}
+:host(.border) #main{
+    border-width: 1px;
+}
+:host[border]{
+    border-width: 1px;
+}

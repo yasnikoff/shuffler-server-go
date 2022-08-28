@@ -1,0 +1,32 @@
+#main{
+text-align:center;
+    border: solid 1px grey;
+    padding:0.5em;
+    margin:0.25em;
+    width:12em;
+    min-height: 25ex;
+    /*height: 25ex;;*/
+}
+#thumb-container{
+    display:block;
+    width:100%;
+    margin: 0px 30px;
+}
+#thumb{
+    display:block;
+    cursor:pointer;
+    margin: 10px auto auto;
+}
+#name{
+    /*font-weight: bold;*/
+    text-wrap: normal;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+#id-container{
+    overflow: hidden; /* TODO: find better way to deal with id-field overflow*/
+}
+#idInput{
+    font-size: xx-small;
+    border:transparent;
+}

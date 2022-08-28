@@ -1,0 +1,4 @@
+<a [routerLink]="['New']">New</a>
+<label>Query</label>
+<query-input #queryInput (onChange)="loadProjects($event)" (onResultLoaded)="onResultLoaded($event)"></query-input>
+<project-list #projectList [ids]="projects"></project-list>

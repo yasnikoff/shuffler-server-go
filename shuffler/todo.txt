@@ -1,0 +1,36 @@
+CYCLIC DEPS!
+is it possible to create cycle after the dep is added by changing dep's dependencies? 
+When to check for cycles?
+
+"shallow" option for deps? not to copy 2-nd order deps? for example if the dep is only needed as a guide,
+and all the necessary assets is in the main file.
+
+SELECTIVE DEPS UPDATE
+
+index repo automatically right after project init, clear
+deleted projects in updateIndex
+core package for all the interfaces
+hide recursive dep update behind -r flag
+
+recursively delete all deps in the dir
+
+"regular" and "library projects. Do not add regular to the index? or keep them in another storage that is searched only if "library storage" search was not successful?
+aliases for frequently used projects
+version control of the metadata?
+
+in server mode reload repos and projects when changes are made to the saved metadata on disk.
+
+there was an attempt to get rid of pathfilter package in Project.FileList in favour of glob patterns.
+Unfortunately there is a bug with project dependencies in current implementation:
+when project dep first added, all files are copied as expected, but when the dep is updated,
+private files (started with "." or "_") are copied as well.
+So for now, as a workaround,FileList uses pathfilter to filter out those files.
+
+move project
+
+version control. want to commit dependencies with project.
+.gintignore inside .shuffler?
+
+adding dependency to the subpath that already exist
+
+fix dependency remove

@@ -1,0 +1,13 @@
+<div id="main">
+    <!--<div id="id-container">-->
+        <!--<id-field id="prId" [value]="id"></id-field>-->
+    <!--</div>-->
+    <input #idInput id="idInput" type="text" class="id-field"
+           (click)="idInput.select()"
+           value="{{project.id}}">
+    <a id="thumb-container" (click)="onClick($event);">
+    <!--<a [routerLink="['/Repos', {repo:model.repo.name}]"]>-->
+        <project-thumb id="thumb" size="128px"></project-thumb>
+    </a>
+    <div id="name">{{project.name}}</div>
+</div>

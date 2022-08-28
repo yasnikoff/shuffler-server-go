@@ -1,0 +1,3 @@
+<div id="main" *ngIf="ids!=null && ids.length>0">
+    <project-card *ngFor="let prId of ids" [id]="prId"></project-card>
+</div>

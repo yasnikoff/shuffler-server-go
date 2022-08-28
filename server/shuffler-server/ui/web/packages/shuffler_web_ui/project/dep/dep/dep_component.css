@@ -1,0 +1,9 @@
+#main{
+    margin-top:10px;
+    border:1px solid lightgray;
+    padding: 10px;
+}
+label{
+    display:inline-block;
+}
+

@@ -1,0 +1,127 @@
+{
+  "ngDeps": {
+    "1": "",
+    "4": [
+      {
+        "1": "core/id.dart"
+      },
+      {
+        "1": "core/server.dart"
+      },
+      {
+        "1": "core/data.dart"
+      },
+      {
+        "1": "core/service.dart"
+      },
+      {
+        "1": "core/path.dart"
+      },
+      {
+        "1": "core/component.dart"
+      }
+    ],
+    "6": "core.dart",
+    "7": [
+      {
+        "1": "core/id.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "core/server.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "core/data.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "core/service.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "core/path.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "core/component.template.dart",
+        "4": "i5"
+      }
+    ]
+  },
+  "type": {
+    "ComponentBase": {
+      "class": "Identifier",
+      "name": "ComponentBase",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Data": {
+      "class": "Identifier",
+      "name": "Data",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/data.dart",
+      "prefix": null,
+      "value": null
+    },
+    "HOST": {
+      "class": "Identifier",
+      "name": "HOST",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/server.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ID": {
+      "class": "Identifier",
+      "name": "ID",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/id.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Path": {
+      "class": "Identifier",
+      "name": "Path",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/path.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Server": {
+      "class": "Type",
+      "name": "Server",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/server.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "HOST",
+              "moduleUrl": "asset:shuffler_web_ui/lib/core/server.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        }
+      ]
+    },
+    "Service": {
+      "class": "Identifier",
+      "name": "Service",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/service.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

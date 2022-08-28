@@ -1,0 +1,248 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/query/query_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "ProjectsQueryInput",
+        "5": [
+          {
+            "1": "QueryService",
+            "4": "service"
+          },
+          {
+            "3": [
+              "const Inject(QUERY)"
+            ],
+            "4": "query"
+          }
+        ],
+        "6": [
+          "OnInit",
+          "AfterViewInit"
+        ]
+      }
+    ],
+    "6": "query_input_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/router.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:shuffler_web_ui/core.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/query/query_service.template.dart",
+        "4": "i3"
+      }
+    ]
+  },
+  "type": {
+    "ProjectsQueryInput": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "query-input",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProjectsQueryInput",
+        "moduleUrl": "asset:shuffler_web_ui/lib/project/query/input/query_input_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "QueryService",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/query/query_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "QUERY",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/query/input/query_input_component.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {
+        "onChange": "onChange",
+        "onResultLoaded": "onResultLoaded"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0,
+        6
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "\n<input #query id=\"query\" type=\"text\" placeholder=\"recent\">\n<button type=\"button\" (click)=\"onQueryInputChange(query.value)\">Search</button>\n<button type=\"button\" (click)=\"clear()\">Clear</button>\n\n<!--<project-list [ids]=\"result\"></project-list>-->\n\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/project/query/input/query_input_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/project/query/input/query_input_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "QueryService",
+              "moduleUrl": "asset:shuffler_web_ui/lib/project/query/query_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "ProjectCollection",
+                      "moduleUrl": "asset:shuffler_web_ui/lib/project/collection/project_collection_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "QueryService",
+            "moduleUrl": "asset:shuffler_web_ui/lib/project/query/query_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "ProjectCollection",
+                    "moduleUrl": "asset:shuffler_web_ui/lib/project/collection/project_collection_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "query",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "queryInputRef",
+          "read": null
+        }
+      ]
+    },
+    "QUERY": {
+      "class": "Identifier",
+      "name": "QUERY",
+      "moduleUrl": "asset:shuffler_web_ui/lib/project/query/input/query_input_component.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

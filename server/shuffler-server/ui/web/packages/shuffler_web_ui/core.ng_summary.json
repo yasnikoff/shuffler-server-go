@@ -1,0 +1,28 @@
+{
+  "ngDeps": {
+    "1": "",
+    "4": [
+      {
+        "1": "core/id.dart"
+      },
+      {
+        "1": "core/server.dart"
+      },
+      {
+        "1": "core/data.dart"
+      },
+      {
+        "1": "core/service.dart"
+      },
+      {
+        "1": "core/path.dart"
+      },
+      {
+        "1": "core/component.dart"
+      }
+    ],
+    "6": "core.dart"
+  },
+  "type": {},
+  "alias": {}
+}

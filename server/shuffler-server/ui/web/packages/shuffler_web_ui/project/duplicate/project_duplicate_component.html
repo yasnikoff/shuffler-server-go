@@ -1,0 +1,5 @@
+<label>Path</label>
+<input #newPath id="newPath" class="path-field" type="text" placeholder="new path" value="{{cmp.model.projectPath}}">
+<label>Name</label>
+<input #newName type="text" placeholder="new name" value="{{cmp.model.name}}">
+<button (click)="duplicate(newPath.value, newName.value)">Duplicate</button>

@@ -1,0 +1,12 @@
+<span class="group">
+    <button type="button" (click)="model?.update()" *ngIf="model?.length > 0">Update</button>
+</span>
+<span id="add" class="group">
+    <label>Path</label>
+    <input #path type="text" placeholder="path" class="path-field">
+    <label>ID</label>
+    <input #ID type="text" placeholder="ID" class="id-field">
+    <button type="button" (click)="model?.add(path.value, 'descriptor', {'id':ID.value})">Add</button>
+</span>
+
+

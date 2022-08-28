@@ -1,0 +1,143 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/component/project_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/collection/component/project_collection_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "ProjectDuplicate",
+        "5": [
+          {
+            "1": "ProjectComponent",
+            "4": "project"
+          },
+          {
+            "1": "ProjectCollectionComponent",
+            "4": "projects"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ]
+      }
+    ],
+    "6": "project_duplicate_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:shuffler_web_ui/core.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/component/project_component.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/collection/component/project_collection_component.template.dart",
+        "4": "i3"
+      }
+    ]
+  },
+  "type": {
+    "ProjectDuplicate": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "duplicate",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProjectDuplicate",
+        "moduleUrl": "asset:shuffler_web_ui/lib/project/duplicate/project_duplicate_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ProjectComponent",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/component/project_component.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ProjectCollectionComponent",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/collection/component/project_collection_component.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<label>Path</label>\n<input #newPath id=\"newPath\" class=\"path-field\" type=\"text\" placeholder=\"new path\" value=\"{{cmp.model.projectPath}}\">\n<label>Name</label>\n<input #newName type=\"text\" placeholder=\"new name\" value=\"{{cmp.model.name}}\">\n<button (click)=\"duplicate(newPath.value, newName.value)\">Duplicate</button>\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/project/duplicate/project_duplicate_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/project/duplicate/project_duplicate_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

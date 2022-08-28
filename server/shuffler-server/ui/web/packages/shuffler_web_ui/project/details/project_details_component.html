@@ -1,0 +1,48 @@
+<div id="main">
+    <div id="details">
+        <div id="thumb-container">
+            <project-thumb size="256px"></project-thumb>
+        </div>
+        <div id="details-right">
+            <form id="mainForm" (ngSubmit)="formSubmit();">
+                <div>
+                    <label>Name</label>
+                    <input id="name" [(ngModel)]="model.name" type="text" placeholder="project name"/>
+                </div>
+                <div>
+                    <label>ID</label>
+
+                    <!--breaks form layout for some reason-->
+                    <!--<id-field [value]="model.id"></id-field>  -->
+
+                    <input class="id-field" type="text" value="{{model.id}}">
+                </div>
+                <div>
+                    <label>Origin</label>
+                    <input class="id-field" type="text" [(ngModel)]="cmp.origin">
+                </div>
+
+                <div id="main-form-buttons">
+                    <button type="submit">Save</button>
+                    <button type="button" (click)="openDuplicate()">Duplicate</button>
+                </div>
+            </form>
+            <div>
+                <label>Path</label>
+                <input class="path-field" type="text" [(ngModel)]="model.projectPath">
+                <button type="button" (click)="openInExplorer()">Open</button>
+            </div>
+            <div id="tags-container">
+                <label>Tags</label>
+                <tag-list></tag-list>
+                <tag-add></tag-add>
+            </div>
+        </div>
+    </div>
+
+    <deps id="deps">
+        <label>Dependencies</label>
+        <dep-controls></dep-controls>
+        <dep-list></dep-list>
+    </deps>
+</div>

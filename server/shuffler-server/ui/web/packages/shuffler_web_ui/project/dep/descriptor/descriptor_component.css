@@ -1,0 +1,12 @@
+#main{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:5px;
+}
+#details{
+    margin-left: 15px;
+}
+#thumb{
+    cursor: pointer;
+    border: 10px solid red;
+}

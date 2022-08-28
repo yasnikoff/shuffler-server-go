@@ -1,0 +1,46 @@
+body{
+    font-family: "Roboto";
+    border-color:grey;
+}
+div{
+    border-color:grey;
+    padding:5px;
+}
+button{
+    margin:3px;
+    background-color: #eee;
+    border:  1px solid lightgray;
+    padding:2px 5px;
+}
+input{
+    border: 1px solid lightgray;
+    text-align:left;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+a{
+    color:dimgrey;
+    text-decoration: none;
+}
+label{
+    color:grey;
+}
+label:after{
+    content: ": ";
+}
+.id-field{
+    width:20em;
+    text-align: center;
+}
+.path-field{
+    width:20em;
+    border: 1px solid lightgrey;
+}
+.button{
+    color: grey;
+    text-decoration: none;
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+    margin-top: 1em;
+    overflow-wrap: normal;
+}

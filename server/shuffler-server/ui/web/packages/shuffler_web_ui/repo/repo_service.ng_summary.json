@@ -1,0 +1,74 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:convert",
+        "5": false
+      },
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "RepoService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Server",
+            "4": "server"
+          }
+        ]
+      }
+    ],
+    "6": "repo_service.dart"
+  },
+  "type": {
+    "RepoService": {
+      "class": "Type",
+      "name": "RepoService",
+      "moduleUrl": "asset:shuffler_web_ui/lib/repo/repo_service.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Server",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

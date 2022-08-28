@@ -1,0 +1,94 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/tags/tags_service.dart",
+        "5": false
+      },
+      {
+        "1": "dart:html",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TagAdd",
+        "6": [
+          "AfterViewInit"
+        ]
+      }
+    ],
+    "6": "tag_add_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:shuffler_web_ui/tags/tags_service.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "TagAdd": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "tag-add",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "TagAdd",
+        "moduleUrl": "asset:shuffler_web_ui/lib/tags/tag_add/tag_add_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<input #InputElement type=\"text\" placeholder=\"new tag\" (change)=\"onAdd($event)\">\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/tags/tag_add/tag_add_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/tags/tag_add/tag_add_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "InputElement",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "inputElementRef",
+          "read": null
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

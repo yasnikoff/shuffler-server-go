@@ -1,0 +1,78 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "component/deps_component.dart",
+        "5": false
+      },
+      {
+        "1": "list/dep_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "controls/dep_controls_component.dart",
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "dep_service.dart"
+      },
+      {
+        "1": "component/deps_component.dart"
+      },
+      {
+        "1": "controls/dep_controls_component.dart"
+      },
+      {
+        "1": "dep/dep_component.dart"
+      },
+      {
+        "1": "descriptor/descriptor_component.dart"
+      },
+      {
+        "1": "list/dep_list_component.dart"
+      }
+    ],
+    "6": "deps.dart"
+  },
+  "type": {
+    "DEP_DIRECTIVES": {
+      "class": "Identifier",
+      "name": "DEP_DIRECTIVES",
+      "moduleUrl": "asset:shuffler_web_ui/lib/project/dep/deps.dart",
+      "prefix": null,
+      "value": [
+        {
+          "class": "Identifier",
+          "name": "DepsComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "DepList",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "DepControls",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ]
+    }
+  },
+  "alias": {
+    "DEP_DIRECTIVES": [
+      "DepControls",
+      "DepList",
+      "DepsComponent"
+    ]
+  }
+}

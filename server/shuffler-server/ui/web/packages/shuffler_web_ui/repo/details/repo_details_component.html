@@ -1,0 +1,10 @@
+<div>{{model.name}}</div>
+
+<div>
+    <a class="button" [routerLink]="['../Projects']">Projects</a>
+</div>
+<div>
+    <input #path class="path-field" type="text" placeholder="path to update">
+    <button (click)="model.updateIndex(path.value)">Update</button>
+</div>
+

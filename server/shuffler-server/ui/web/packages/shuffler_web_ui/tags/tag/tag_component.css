@@ -1,0 +1,14 @@
+span {
+    padding: 1px;
+    /*border: 1px solid;*/
+    border: none;
+    margin:1px;
+}
+
+button {
+    /*border: 1px solid grey;*/
+    border: none;
+    font-size: large;
+    color:lightgray;
+    background-color: transparent;
+}

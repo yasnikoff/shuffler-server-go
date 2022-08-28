@@ -1,0 +1,79 @@
+/*
+
+THIS FILE IS GENERATED AUTOMATICALLY
+DO NOT EDIT THE CONTENTS
+
+*/
+
+package shuffler
+
+import (
+	"fmt"
+)
+
+var DocType *DocType
+var afterSave func(*TYPE) error
+
+func INIT() {
+	DocTYPE = RegisterType("TYPE", newTYPE)
+}
+
+func newTYPE() Doc {
+	return NewTYPE()
+}
+
+// SaveTo saves TYPE to the path.
+func ({{.Receiver}} *TYPE) SaveTo(path string) error {
+	if err := doc.Save({{.Receiver}}, path); err != nil {
+		return err
+	}
+	if afterSave != nil {
+		return afterSave({{.Receiver}})
+	}
+	return nil
+}
+// Save saves TYPE to the its path.
+func ({{.Receiver}} *TYPE) SaveDoc() error {
+	return {{.Receiver}}.SaveTo({{.Receiver}}.Path())
+}
+
+// Reload reads document data from disk
+func ({{.Receiver}} *TYPE) Reload() error {
+	d, err := doc.Load({{.Receiver}}.Path())
+	if err != nil {
+		return err
+	}
+	pr, ok := (d).(*TYPE)
+	if !ok {
+		return fmt.Errorf("can't convert doc from %q to TYPE TYPE", {{.Receiver}}.Path())
+	}
+	*{{.Receiver}} = *pr
+	return nil
+}
+//
+//func New()*TYPE{
+//	return doc.DocTYPEs["TYPE"].New().(*TYPE)
+//}
+
+func ({{.Receiver}} *TYPE) TYPE() DocTYPE {
+	return DocTYPE
+}
+
+func ({{.Receiver}} *TYPE)String() string {
+	return fmt.Sprintf("%s {%s}", {{.Receiver}}.TYPE().Name(), {{.Receiver}}.ID())
+}
+
+// Load returns TYPE saved in the filesystem.
+func LoadTYPE(path string) (*TYPE, error) {
+
+	{{.Receiver}}, err := LoadDoc(path)
+	if err != nil {
+		return nil, err
+	}
+	result, ok := {{.Receiver}}.(*TYPE)
+	if !ok {
+		return nil, &WrongDocTypeError{Doc:result, ExpectedTYPE:"TYPE"}
+	}
+	return result, nil
+}
+

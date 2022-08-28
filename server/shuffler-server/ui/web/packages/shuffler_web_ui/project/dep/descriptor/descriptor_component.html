@@ -1,0 +1,9 @@
+<div id="main">
+    <a (click)="click($event)" href="">
+        <project-thumb id="thumb" [id]="model.id"></project-thumb>
+    </a>
+    <div id="details">
+        <div><label>ID</label><input #id class="id-field" type="text" [value]="project.id"><button  (click)="model?.replace(id.value)">Replace</button></div>
+        <div><label>Name</label> {{project.name}}</div>
+    </div>
+</div>

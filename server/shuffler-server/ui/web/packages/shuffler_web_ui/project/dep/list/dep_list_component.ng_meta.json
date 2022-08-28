@@ -1,0 +1,116 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/dep/dep_service.dart",
+        "5": false
+      },
+      {
+        "1": "../dep/dep_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "DepList",
+        "5": [
+          {
+            "1": "DepCollection",
+            "4": "model"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "DepComponent"
+          }
+        ]
+      }
+    ],
+    "6": "dep_list_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/dep/dep_service.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../dep/dep_component.template.dart",
+        "4": "i2"
+      }
+    ]
+  },
+  "type": {
+    "DepList": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "dep-list",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "DepList",
+        "moduleUrl": "asset:shuffler_web_ui/lib/project/dep/list/dep_list_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DepCollection",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/dep/dep_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<dep *ngFor=\"let dep of deps\" [model]=\"dep\"></dep>\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/project/dep/list/dep_list_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/project/dep/list/dep_list_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

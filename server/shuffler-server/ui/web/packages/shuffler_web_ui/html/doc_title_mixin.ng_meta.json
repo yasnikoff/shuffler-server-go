@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "DocTitle": {
+      "class": "Identifier",
+      "name": "DocTitle",
+      "moduleUrl": "asset:shuffler_web_ui/lib/html/doc_title_mixin.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

@@ -1,0 +1,110 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "../dep_service.dart",
+        "5": false
+      },
+      {
+        "1": "../descriptor/descriptor_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/collection/component/project_collection_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "DepComponent",
+        "5": [
+          {
+            "1": "ProjectCollectionComponent",
+            "4": "_collection"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "DescriptorComponent"
+          }
+        ]
+      }
+    ],
+    "6": "dep_component.dart"
+  },
+  "type": {
+    "DepComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "dep",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "DepComponent",
+        "moduleUrl": "asset:shuffler_web_ui/lib/project/dep/dep/dep_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ProjectCollectionComponent",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "model": "model"
+      },
+      "inputTypes": {
+        "model": " Dep"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div id=\"main\">\n    <label>path</label>\n    <span id=\"path\">{{model.depPath}}</span>\n    <div>\n        <descriptor [model]=\"model?.depData\"></descriptor>\n    </div>\n    <div id=\"controls\">\n        <button type=\"button\" (click)=\"model?.update()\">Update</button>\n        <button type=\"button\" (click)=\"model?.remove()\">Remove</button>\n    </div>\n</div>\n\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/project/dep/dep/dep_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/project/dep/dep/dep_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

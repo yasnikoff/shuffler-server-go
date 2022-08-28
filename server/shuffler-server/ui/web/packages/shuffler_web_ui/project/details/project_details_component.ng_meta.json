@@ -1,0 +1,293 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/common/forms.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/dep/deps.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/tags/tags.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/html/doc_title_mixin.dart",
+        "5": false
+      },
+      {
+        "1": "../component/project_component.dart",
+        "5": false
+      },
+      {
+        "1": "../project_service.dart",
+        "5": false
+      },
+      {
+        "1": "../thumb/project_thumb_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "ProjectDetails",
+        "5": [
+          {
+            "1": "ProjectComponent",
+            "4": "cmp"
+          }
+        ],
+        "6": [
+          "AfterViewInit",
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "ProjectThumb"
+          },
+          {
+            "2": "TAG_DIRECTIVES"
+          },
+          {
+            "2": "DEP_DIRECTIVES"
+          },
+          {
+            "2": "FORM_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "project_details_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/src/common/forms.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/dep/deps.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:shuffler_web_ui/tags/tags.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "package:shuffler_web_ui/core.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "package:shuffler_web_ui/html/doc_title_mixin.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "../component/project_component.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "../project_service.template.dart",
+        "4": "i7"
+      },
+      {
+        "1": "../thumb/project_thumb_component.template.dart",
+        "4": "i8"
+      }
+    ]
+  },
+  "type": {
+    "ProjectDetails": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "project-details",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProjectDetails",
+        "moduleUrl": "asset:shuffler_web_ui/lib/project/details/project_details_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ProjectComponent",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/component/project_component.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6,
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div id=\"main\">\n    <div id=\"details\">\n        <div id=\"thumb-container\">\n            <project-thumb size=\"256px\"></project-thumb>\n        </div>\n        <div id=\"details-right\">\n            <form id=\"mainForm\" (ngSubmit)=\"formSubmit();\">\n                <div>\n                    <label>Name</label>\n                    <input id=\"name\" [(ngModel)]=\"model.name\" type=\"text\" placeholder=\"project name\"/>\n                </div>\n                <div>\n                    <label>ID</label>\n\n                    <!--breaks form layout for some reason-->\n                    <!--<id-field [value]=\"model.id\"></id-field>  -->\n\n                    <input class=\"id-field\" type=\"text\" value=\"{{model.id}}\">\n                </div>\n                <div>\n                    <label>Origin</label>\n                    <input class=\"id-field\" type=\"text\" [(ngModel)]=\"cmp.origin\">\n                </div>\n\n                <div id=\"main-form-buttons\">\n                    <button type=\"submit\">Save</button>\n                    <button type=\"button\" (click)=\"openDuplicate()\">Duplicate</button>\n                </div>\n            </form>\n            <div>\n                <label>Path</label>\n                <input class=\"path-field\" type=\"text\" [(ngModel)]=\"model.projectPath\">\n                <button type=\"button\" (click)=\"openInExplorer()\">Open</button>\n            </div>\n            <div id=\"tags-container\">\n                <label>Tags</label>\n                <tag-list></tag-list>\n                <tag-add></tag-add>\n            </div>\n        </div>\n    </div>\n\n    <deps id=\"deps\">\n        <label>Dependencies</label>\n        <dep-controls></dep-controls>\n        <dep-list></dep-list>\n    </deps>\n</div>\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/project/details/project_details_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/project/details/project_details_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Owner",
+              "moduleUrl": "asset:shuffler_web_ui/lib/tags/tags_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "ProjectService",
+              "moduleUrl": "asset:shuffler_web_ui/lib/project/project_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "ProjectCollection",
+                      "moduleUrl": "asset:shuffler_web_ui/lib/project/collection/project_collection_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "TagList",
+                "moduleUrl": "asset:shuffler_web_ui/lib/tags/list/tag_list_component.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": [
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "TagService",
+                        "moduleUrl": "asset:shuffler_web_ui/lib/tags/tags_service.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": false,
+                    "isValue": false
+                  }
+                ]
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "tagList",
+          "read": null
+        },
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "TagAdd",
+                "moduleUrl": "asset:shuffler_web_ui/lib/tags/tag_add/tag_add_component.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "tagAdd",
+          "read": null
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

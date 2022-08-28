@@ -1,0 +1,60 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "list/tag_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "tag_add/tag_add_component.dart",
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "list/tag_list_component.dart"
+      },
+      {
+        "1": "tag/tag_component.dart"
+      },
+      {
+        "1": "tag_add/tag_add_component.dart"
+      },
+      {
+        "1": "tags_service.dart"
+      }
+    ],
+    "6": "tags.dart"
+  },
+  "type": {
+    "TAG_DIRECTIVES": {
+      "class": "Identifier",
+      "name": "TAG_DIRECTIVES",
+      "moduleUrl": "asset:shuffler_web_ui/lib/tags/tags.dart",
+      "prefix": null,
+      "value": [
+        {
+          "class": "Identifier",
+          "name": "TagList",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "TagAdd",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ]
+    }
+  },
+  "alias": {
+    "TAG_DIRECTIVES": [
+      "TagAdd",
+      "TagList"
+    ]
+  }
+}

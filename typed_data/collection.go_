@@ -1,0 +1,70 @@
+package typed_data
+
+import (
+	"github.com/pkg/errors"
+	"sync"
+)
+
+// Collection of heterogeneous Data items from a single Registry.
+type Collection interface {
+	Add(name string, item Data) error
+	Set(name string, item Data)
+	Get(name string) (Data, bool)
+	Remove(name string) error
+	Rename(oldName, newName string)error
+	Items() []Data
+	Names() []string
+}
+
+// Create new concurrency-safe Collection.
+func NewCollection(r Registry) Collection {
+	return &collection{registry:r, items:make(map[string]Data), names:make([]string, 0)}
+}
+
+// Default implementation of Collection
+type collection struct {
+	registry Registry
+	lock     sync.RWMutex
+	items    map[string]Data
+	names    []string
+}
+
+var ErrCollectionNameAlreadyExists = errors.New("collection alredy has an item with the name specified")
+
+// Add the item to the collection under the specified name.
+// If the name already exists, return error.
+func (c *collection)Add(name string, item Data) error {
+	c.lock.RLock()
+	if _, ok := c.items[name]; ok {
+		c.lock.RUnlock()
+		return errors.Wrapf(ErrCollectionNameAlreadyExists, "%q", name)
+	}
+	c.lock.RUnlock()
+	c.Set(name, item)
+	return nil
+}
+
+// Add the item with the specified name.
+// Replace existing item if the name already exists in the collection
+func (c *collection)Set(name string, item Data) {
+	c.lock.Lock()
+	c.names = append(c.names, name)
+	c.items[name] = item
+	c.lock.Unlock()
+}
+
+// Get an item from by name. Return an item and ok boolean
+// to indicate whether or not the item is in the collection.
+func (c *collection)Get(name string) (Data, bool) {
+	c.lock.RLock()
+	defer c.lock.RUnlock()
+	d, ok := c.items[name]
+	return d, ok
+}
+
+func (c *collection)Remove(name string) error{
+	c.lock.Lock()
+	defer c.lock.Unlock()
+
+
+}

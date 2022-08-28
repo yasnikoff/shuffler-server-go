@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "ComponentBase": {
+      "class": "Identifier",
+      "name": "ComponentBase",
+      "moduleUrl": "asset:shuffler_web_ui/lib/core/component.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

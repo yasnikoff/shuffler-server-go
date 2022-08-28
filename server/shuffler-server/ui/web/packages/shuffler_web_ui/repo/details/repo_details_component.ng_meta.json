@@ -1,0 +1,255 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/repo/repo_service.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/id_field/id_field_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/project/list/project_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:shuffler_web_ui/html/doc_title_mixin.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "RepoDetails",
+        "5": [
+          {
+            "1": "RepoService",
+            "4": "model"
+          },
+          {
+            "1": "ProjectList",
+            "4": "projectList"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "ROUTER_DIRECTIVES"
+          },
+          {
+            "2": "IdField"
+          },
+          {
+            "2": "ProjectList"
+          }
+        ]
+      }
+    ],
+    "6": "repo_details_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/router.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:shuffler_web_ui/repo/repo_service.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:shuffler_web_ui/id_field/id_field_component.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "package:shuffler_web_ui/project/list/project_list_component.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "package:shuffler_web_ui/core.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "package:shuffler_web_ui/html/doc_title_mixin.template.dart",
+        "4": "i6"
+      }
+    ]
+  },
+  "type": {
+    "RepoDetails": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "repo-details",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "RepoDetails",
+        "moduleUrl": "asset:shuffler_web_ui/lib/repo/details/repo_details_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "RepoService",
+                "moduleUrl": "asset:shuffler_web_ui/lib/repo/repo_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ProjectList",
+                "moduleUrl": "asset:shuffler_web_ui/lib/project/list/project_list_component.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div>{{model.name}}</div>\n\n<div>\n    <a class=\"button\" [routerLink]=\"['../Projects']\">Projects</a>\n</div>\n<div>\n    <input #path class=\"path-field\" type=\"text\" placeholder=\"path to update\">\n    <button (click)=\"model.updateIndex(path.value)\">Update</button>\n</div>\n\n",
+        "templateUrl": "asset:shuffler_web_ui/lib/repo/details/repo_details_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:shuffler_web_ui/lib/repo/details/repo_details_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "ProjectList",
+              "moduleUrl": "asset:shuffler_web_ui/lib/project/list/project_list_component.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "RepoService",
+                      "moduleUrl": "asset:shuffler_web_ui/lib/repo/repo_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "ProjectList",
+            "moduleUrl": "asset:shuffler_web_ui/lib/project/list/project_list_component.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "RepoService",
+                    "moduleUrl": "asset:shuffler_web_ui/lib/repo/repo_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
