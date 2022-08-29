@@ -29,7 +29,7 @@ Dependency is another Project assotiated with subdirectory in the Project's Root
 
 When you need to work on the Project, you run 'setup' command in the Project Root, 
 and Shuffler copies all the dependencies' Public Files inside their subdirs in the Root.
-When you're done, you run 'cleanup' command, and shuffler deletes all dependencis' subdirs from the Priject's Root.
+When you're done, you run 'cleanup' command, and shuffler deletes all dependencis' subdirs from the Project's Root.
 
 
 
