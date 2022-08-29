@@ -1,6 +1,6 @@
-# shuffler-server-go
+# shuffler server
 
-Shuffler is a simple general purpose package manager and ctalogue software.
+Shuffler is a basic general purpose package manager and ctalogue software.
 
 It is an in-house project for an advertizing agency which has a Work Archive with many files created in 3d and 2d graphical applcations.
 Many of the files have links to another external files (depend on them). Many files are depencies of many other files.
@@ -29,7 +29,12 @@ Dependency is another Project assotiated with subdirectory in the Project's Root
 
 When you need to work on the Project, you run 'setup' command in the Project Root, 
 and Shuffler copies all the dependencies' Public Files inside their subdirs in the Root.
-When you're done, you run 'cleanup' command, and shuffler deletes all dependencis' subdirs from the Project's Root.
+When you're done, you run 'cleanup' command, and Shuffler deletes all dependencis' subdirs from the Project's Root.
+
+## Web GUI
+
+There is a separate project for GUI:
+https://github.com/yasnikoff/shuffler-ui-dart/
 
 
 
